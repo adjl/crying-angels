@@ -8,11 +8,24 @@
   </head>
   <body>
     <a-scene>
-      <a-sphere position="0 1.25 -1" radius="1.25" color="#EF2D5E"></a-sphere>
-      <a-cube position="-1 0.5 1" rotation="0 45 0" width="1" height="1" depth="1" color="#4CC3D9"></a-cube>
-      <a-cylinder position="1 0.75 1" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-      <a-plane rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-      <a-sky color="#ECECEC"></a-sky>
+      <a-assets>
+        <img id="monalisa" src="monalisa.png">
+        <img id="marble" src="marble.png">
+      </a-assets>
+      <a-entity position="0 1 0">
+        <!-- <a-box position="0 0 -1" radius="1.0" height="3" color="#FF9E00"></a-box>
+        <a-box position="-1 0 1" radius="0.75" height="2" color="#9EFF00"></a-box> -->
+        <!-- <a-box radius="0.5" height="1.5" color="#FFF" src="#marble">
+          <a-animation attribute="rotation" repeat="indefinite" to="360 0 0"></a-animation>
+        </a-box> -->
+      </a-entity>
+      <a-image src="#monalisa" position="0 2 0" scale="2 2 2">
+        <a-animation attribute="rotation" repeat="indefinite" to="0 360 0"></a-animation>
+      </a-image>
+      <a-plane rotation="-90 0 0" width="4" height="4" color="#FFF" src="#marble"></a-plane>
+      <a-sky color="#9E9E9E"></a-sky>
+      <a-light type="ambient" color="white"></a-light>
+      <a-light type="directional" color="black" position="0 10 0" look-at="a-plane" intensity="5.0"></a-light>
     </a-scene>
   </body>
 </html>
