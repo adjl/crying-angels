@@ -2,8 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Hello, World! • A-Frame</title>
-    <meta name="description" content="Hello, World! • A-Frame">
+    <title>Crying Angels</title>
+    <meta name="description" content="Crying Angels">
     <script src="aframe.min.js"></script>
   </head>
   <body>
@@ -12,20 +12,22 @@
         <img id="monalisa" src="monalisa.png">
         <img id="marble" src="marble.png">
       </a-assets>
-      <a-entity position="0 1 0">
-        <!-- <a-box position="0 0 -1" radius="1.0" height="3" color="#FF9E00"></a-box>
-        <a-box position="-1 0 1" radius="0.75" height="2" color="#9EFF00"></a-box> -->
-        <!-- <a-box radius="0.5" height="1.5" color="#FFF" src="#marble">
-          <a-animation attribute="rotation" repeat="indefinite" to="360 0 0"></a-animation>
-        </a-box> -->
-      </a-entity>
-      <a-image src="#monalisa" position="0 2 0" scale="2 2 2">
-        <a-animation attribute="rotation" repeat="indefinite" to="0 360 0"></a-animation>
+      <a-image position="0 2 0" scale="2 2 2" src="#monalisa">
+        <!-- <a-animation attribute="rotation" repeat="indefinite" to="0 360 0"></a-animation> -->
+        <a-animation attribute="rotation" begin="click" repeat="indefinite" to="0 360 0"></a-animation>
+        <a-animation attribute="rotation" begin="fusing" repeat="indefinite" to="0 360 0"></a-animation>
       </a-image>
-      <a-plane rotation="-90 0 0" width="4" height="4" color="#FFF" src="#marble"></a-plane>
-      <a-sky color="#9E9E9E"></a-sky>
-      <a-light type="ambient" color="white"></a-light>
-      <a-light type="directional" color="black" position="0 10 0" look-at="a-plane" intensity="5.0"></a-light>
+      <a-image position="-4 2 0" scale="2 2 2" src="#monalisa">
+        <!-- <a-animation attribute="rotation" repeat="indefinite" to="0 360 0"></a-animation> -->
+      </a-image>
+      <a-image position="4 2 0" scale="2 2 2" src="#monalisa">
+        <!-- <a-animation attribute="rotation" repeat="indefinite" to="0 360 0"></a-animation> -->
+      </a-image>
+      <a-plane rotation="-90 0 0" width="12" height="4" src="#marble"></a-plane>
+      <a-sky color="#9E009E"></a-sky>
+      <a-camera position="0 2 5">
+        <a-cursor fuse="true" maxDistance="10" timeout="0" color="#0F0">
+      </a-camera>
     </a-scene>
   </body>
 </html>
