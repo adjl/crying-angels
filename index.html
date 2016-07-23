@@ -13,20 +13,21 @@
         <img id="marble" src="marble.png">
       </a-assets>
       <a-image position="0 2 0" scale="2 2 2" src="#monalisa">
-        <!-- <a-animation attribute="rotation" repeat="indefinite" to="0 360 0"></a-animation> -->
-        <a-animation attribute="rotation" begin="click" repeat="indefinite" to="0 360 0"></a-animation>
-        <a-animation attribute="rotation" begin="fusing" repeat="indefinite" to="0 360 0"></a-animation>
+        <a-animation attribute="rotation" repeat="indefinite" to="0 360 0"></a-animation>
+        <a-animation attribute="rotation" begin="hovered" repeat="indefinite" to="0 0 0"></a-animation>
       </a-image>
-      <a-image position="-4 2 0" scale="2 2 2" src="#monalisa">
-        <!-- <a-animation attribute="rotation" repeat="indefinite" to="0 360 0"></a-animation> -->
+      <a-image position="-3 2 0" scale="2 2 2" src="#monalisa">
+        <a-animation attribute="rotation" repeat="indefinite" to="0 360 0"></a-animation>
+        <a-animation attribute="rotation" begin="hovered" repeat="indefinite" to="0 0 0"></a-animation>
       </a-image>
-      <a-image position="4 2 0" scale="2 2 2" src="#monalisa">
-        <!-- <a-animation attribute="rotation" repeat="indefinite" to="0 360 0"></a-animation> -->
+      <a-image position="3 2 0" scale="2 2 2" src="#monalisa">
+        <a-animation attribute="rotation" repeat="indefinite" to="0 360 0"></a-animation>
+        <a-animation attribute="rotation" begin="hovered" repeat="indefinite" to="0 0 0"></a-animation>
       </a-image>
       <a-plane rotation="-90 0 0" width="12" height="4" src="#marble"></a-plane>
       <a-sky color="#9E009E"></a-sky>
       <a-camera position="0 2 5">
-        <a-cursor fuse="true" maxDistance="10" timeout="0" color="#0F0">
+        <a-cursor fuse="true" maxDistance="100" timeout="0" color="#0F0">
       </a-camera>
     </a-scene>
   </body>
