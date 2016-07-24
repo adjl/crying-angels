@@ -15,7 +15,7 @@ Subject, of course, to your browser and/or device being able to support VR featu
 [Enjoy](https://adjl.github.io/CryingAngels)
 
 ## Tech
-Powered by [A-Frame](https://aframe.io)
+Powered by [A-Frame](https://aframe.io).
 
 ## Remarks
 - Pretend that the Lizzies and their fat cats are angelic...
@@ -24,4 +24,4 @@ Powered by [A-Frame](https://aframe.io)
 - ... We just didn't get to put them together.
 - No credit to me btw, it's not my idea :)
 - Is actually called 'Crying Statues', but I mistyped. Oops.
-- 'Twas fun making this
+- 'Twas fun making this.
