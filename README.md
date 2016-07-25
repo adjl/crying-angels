@@ -22,6 +22,6 @@ Powered by [A-Frame](https://aframe.io).
 - ... and that their spinning are them chasing and trying to kill you.
 - To be fair, we did have moving angel statues and a maze...
 - ... We just didn't get to put them together.
-- No credit to me btw, it's not my idea :)
+- It's not my idea :) Credit goes to [@edent](https://github.com/edent)
 - Is actually called 'Crying Statues', but I mistyped. Oops.
 - 'Twas fun making this.
